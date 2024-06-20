@@ -1,0 +1,202 @@
+/* Basic reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font and body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4081;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4081;
+}
+
+/* Hero section styling */
+.hero {
+    background: linear-gradient(135deg, #ff4081, #ff80ab);
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    color: white;
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+/* Services section styling */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+}
+
+.service {
+    flex: 1;
+    max-width: 320px;
+    margin: 0 1rem;
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ff4081;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+/* Advantages section styling */
+.advantages {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 2rem;
+    background-color: #fff;
+}
+
+.advantage {
+    flex: 1;
+    max-width: 220px;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.advantage h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #ff4081;
+}
+
+.advantage p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.advantage img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Servers section styling */
+.servers {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+}
+
+.servers h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.servers img {
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.stats div {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}

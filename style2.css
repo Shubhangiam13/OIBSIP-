@@ -1,0 +1,191 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #55acee;
+}
+
+/* Main sections styles */
+.section {
+    padding: 80px;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    position: relative;
+}
+/* Adjustments for profile photo */
+.profile-container {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.profile-img {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image round */
+    border: 5px solid #fff; /* Optional: add a border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+}
+
+
+.underline {
+    width: 60px;
+    height: 3px;
+    background-color: #55acee;
+    margin: 0 auto;
+}
+
+/* Skills section styles */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.skill-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* Projects section styles */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.project-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+/* Contact section styles */
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-list li img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    margin-top: 40px;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .skill-item img {
+        width: 50px;
+        height: 50px;
+    }
+}
